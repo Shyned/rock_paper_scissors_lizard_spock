@@ -1,4 +1,4 @@
-import human_ai,human_vs_human
+
 #import for user classes for game mode pick
 
 
@@ -38,8 +38,3 @@ class game_on():
                 quit()
             
 
-
-
-
-game = game_on()
-game.lets_get_it_on()
