@@ -4,8 +4,9 @@ from player import Player
 
 
 
-class human_vs_human(Player):
+class Human_Vs_Human(Player):
     def __init__(self) :
+        #add a counter for each player
           super().__init__()
           self.player1 = ""
           self.player2 =""
@@ -13,6 +14,7 @@ class human_vs_human(Player):
 
     #loop to check if player pick item in list 
     def players_pick(self):
+        
         #player 1 pick 
         while self.player1.lower() not in self.choice:
             print(self.choice)
@@ -24,11 +26,12 @@ class human_vs_human(Player):
 
             else:
                 pass
-
-
+    #possibly include a loop to with a counter to check if either player has won
+    def point_check (self):
+        pass
     
 
-test=human_vs_human()
-test.players_pick()
-
+    #repeat cycle until either player has won
+    def repeat_till_over(self):
+        pass
     

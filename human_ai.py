@@ -2,10 +2,12 @@ from random import choice
 from player import Player
 
 
+
 #place holder class name for human ai
-'''class human_ai(P):
+class Human_Ai(Player):
     def __init__(self) :
-        super().__init__()'''
+        super().__init__()
+        self.player_choice
 
     #logic for choice in this file
     #robot pick random item from list

@@ -1,4 +1,5 @@
-
+from human_ai import Human_Ai
+from human_vs_human import Human_Vs_Human
 #import for user classes for game mode pick
 
 
@@ -16,22 +17,23 @@ class game_on():
         question = input("Do you want to play (y/n):")
         while question not in self.answer_list:
             question = input("Do you want to play (y/n):")
-#if n then quit
+        #if n then quit
         else:
             if question == 'y':
                 game_mode_list = ["1","2"]
-                game_mode = input("Do you want one or to players (1/2)")
+                game_mode = input("Do you want Single or Versus (1:Single,2:Versus): ")
                 while game_mode not in game_mode_list:
                     game_mode = input("Do you want one or to players (1/2)")
 
+                #if player enters 1 or 2 run player vs player or player vs ai
                 else:
                     if game_mode == "1":
-                        #human vs Ai
-                        pass
+                        Human_Ai()
+                        
                         
                     else:
-                        #run human vs human
-                        pass
+                        Human_Vs_Human
+                        
             
             else:
                 print("Goodbye")
