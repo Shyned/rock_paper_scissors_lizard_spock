@@ -7,6 +7,8 @@ from player import Player
 class Human_Ai(Player):
     def __init__(self) :
         super().__init__()
+        self.name = ""
+        self.enter_name()
         self.player1 =''
         self.cpu_choice = ''
         self.cpu_points = 0
@@ -14,6 +16,14 @@ class Human_Ai(Player):
         self.repeat_till_over()
 
     #logic for choice in this file
+    def enter_name(self):
+        while len(self.name)<5:
+            self.name = input("Please enter a name: (at least 5 letters)")
+            print("Invalid input please try again.")
+
+        else:
+            pass
+
     def players_choice(self):
         self.player1 = ''
         while self.player1.lower() not in self.choice:
@@ -132,13 +142,10 @@ class Human_Ai(Player):
 
 
             elif self.player1_points == 2:
-                print("Player wins")
+                print(f"{self.name} wins")
                 quit()
 
             else:
                 print("Cpu wins")
                 quit()
-                        
-
-
-                
+                    
