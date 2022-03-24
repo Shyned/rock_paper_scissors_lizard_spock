@@ -142,6 +142,3 @@ class Human_Ai(Player):
             else:
                 print(f"{self.cpu_name} wins")
                 quit()
-
-test = Human_Ai()
-test
