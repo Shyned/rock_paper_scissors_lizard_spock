@@ -129,6 +129,7 @@ class Human_Vs_Human(Player):
             
             elif self.player1_points==2:
                 print("Player 1 is the winner")
+                
 
             else:
                 print("Player 2 is the winner")
