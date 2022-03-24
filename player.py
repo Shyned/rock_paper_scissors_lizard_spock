@@ -1,6 +1,4 @@
 
-
-
 #player  parent
 
 class Player():

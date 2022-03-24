@@ -14,7 +14,6 @@ class Human_Vs_Human(Player):
 
     #loop to check if player pick item in list 
     def players_pick(self):
-        
         #player 1 pick 
         while self.player1.lower() not in self.choice:
             print(self.choice)
@@ -33,5 +32,13 @@ class Human_Vs_Human(Player):
 
     #repeat cycle until either player has won
     def repeat_till_over(self):
-        pass
+        while self.player1 <2 or self.player2<2:
+            self.players_pick()
+            
+            self.point_check()
+
+        else:
+            print("winner")
+            quit()
+
     
