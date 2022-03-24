@@ -6,7 +6,6 @@ from human_vs_human import Human_Vs_Human
 
 
 
-
 class game_on():
     def __init__(self):
         self.answer_list =["y","n"]
@@ -33,14 +32,16 @@ class game_on():
                 #if player enters 1 or 2 run player vs player or player vs ai
                 else:
                     if game_mode == "1":
+                        
                         one_player = Human_Ai()
+                        
                         #needs a method in the human vs ai file to run full game
                         one_player
 
                         
                     else:
-                        two_players = Human_Vs_Human
-                        two_players.repeat_till_over
+                        two_players = Human_Vs_Human()
+                        two_players
                         
             
             else:
