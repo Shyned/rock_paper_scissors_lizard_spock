@@ -3,8 +3,7 @@ from human_vs_human import Human_Vs_Human
 #import for user classes for game mode pick
 
 #made oject for class used on line 41  and 37
-two_players = Human_Vs_Human
-one_player = Human_Ai()
+
 
 
 
@@ -12,6 +11,7 @@ class game_on():
     def __init__(self):
         self.answer_list =["y","n"]
         self.display_welcome()
+        self.lets_get_it_on()
 
 
     def display_welcome(self):
@@ -33,11 +33,13 @@ class game_on():
                 #if player enters 1 or 2 run player vs player or player vs ai
                 else:
                     if game_mode == "1":
+                        one_player = Human_Ai()
                         #needs a method in the human vs ai file to run full game
                         one_player
 
                         
                     else:
+                        two_players = Human_Vs_Human
                         two_players.repeat_till_over
                         
             

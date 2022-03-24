@@ -142,6 +142,3 @@ class Human_Ai(Player):
 
 
                 
-            
-test = Human_Ai()
-test            
