@@ -19,7 +19,7 @@ class Human_Ai(Player):
     def enter_name(self):
         while len(self.name)<5:
             self.name = input("Please enter a name: (at least 5 letters)")
-            print("Invalid input please try again.")
+            
 
         else:
             pass
